@@ -14,7 +14,7 @@ struct MovieDetailView: View {
     VStack(spacing: 15){
       Spacer()
         .frame(height: 30)
-      Image(systemName: "applescript.fill")
+      Image(systemName: movieItem.image)
         .resizable()
         .frame(width: 120, height: 120)
       Text(movieItem.name)

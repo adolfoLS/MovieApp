@@ -13,7 +13,7 @@ struct MovieView: View {
   var body: some View {
     HStack(alignment: .center){
       ZStack{
-        Image(systemName: "applescript.fill")
+        Image(systemName: movieItem.image)
           .resizable()
           .frame(width: 120, height: 120)
       }
@@ -30,6 +30,6 @@ struct MovieView: View {
 
 struct MovieView_Previews: PreviewProvider{
   static var previews: some View {
-    MovieView(movieItem: MovieItem(id: 1, name: "Titulo", description: "Una descripción muy larga pero interesante, para poder testear la aplicación y la separación de textos", image: "imagen"))
+    MovieView(movieItem: MovieItem(id: 1, name: "Titulo", description: "Una descripción muy larga pero interesante, para poder testear la aplicación y la separación de textos", image: "applescript.fill"))
   }
 }
